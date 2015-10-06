@@ -59,6 +59,7 @@
     min-height: 42px;
     display: block;
     position: relative;
+    border-radius: 5px;
 }
 
 /***************************** Element type specific styles *****************************/
@@ -83,4 +84,37 @@
 
 .advancedDemo .dropzone .container-element {
     margin: 10px;
+}
+
+.advancedDemo .dropzone .dndDragover > li {
+    /*width: 40px;*/
+}
+
+.test-row {
+    margin: 6px;
+    padding: 4px;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    color: #fff;
+    
+    width: 1000px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.test-row li {
+    float: left;
+    padding-top: 34px;
+    display: inline-block;
+    border: none;
+    border-radius: .5em;
+    margin-right: 4px;
+    color: white;
+    font-weight: bold;
+    background-color: #036;
+    height: 88px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
 }

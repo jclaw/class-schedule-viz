@@ -1,9 +1,10 @@
-angular.module("demo", ['dndLists'])
+angular.module("demo", ['dndLists', 'ngAnimate'])
 .controller("AdvancedDemoController", function($scope) {
 
     $scope.dragoverCallback = function(event, index, external, type) {
         $scope.logListEvent('dragged over', event, index, external, type);
         // Disallow dropping in the third row. Could also be done with dnd-disable-if.
+        // do something to adjust widths of all elements in same list
         return index < 10;
     };
 
